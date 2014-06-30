@@ -1,0 +1,9 @@
+<%= simple_form_for(zone) do |f| %>
+  <%= f.association :manufacturer, :include_blank => false, :label_method => :name %>
+  <%= f.input :color %>
+  <%= f.input :year %>
+  <%= f.input :mileage %>
+  <%= f.input :description %>
+
+  <%= f.button :submit %>
+<% end %>
