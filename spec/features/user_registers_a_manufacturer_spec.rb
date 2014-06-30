@@ -8,6 +8,7 @@ feature 'user registers a manufacturer' do
 
     fill_in 'Name', with: manufacturer.name
     fill_in 'Country', with: manufacturer.country
+
     click_on 'Create Manufacturer'
 
     expect(page).to have_content('Success')

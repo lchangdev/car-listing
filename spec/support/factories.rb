@@ -1,14 +1,16 @@
 FactoryGirl.define do
   factory :manufacturer do
-    sequence(:name) { |n| "Generic Manufacturer #{n}" }
+    name 'Toyota'
     country 'Japan'
   end
 
   factory :car do
-    manufacturer_id 1
+    sequence(:manufacturer_id) { |n| n}
     sequence(:color) { |n| "Generic Color #{n}" }
     year 2000
     mileage 1000
     description 'Generic Description'
+
+    manufacturer
   end
 end

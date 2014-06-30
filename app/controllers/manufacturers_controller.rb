@@ -1,5 +1,4 @@
 class ManufacturersController < ApplicationController
-
   def index
     @manufacturers = Manufacturer.all
   end
@@ -10,7 +9,6 @@ class ManufacturersController < ApplicationController
 
   def create
     @manufacturer = Manufacturer.new(manufacturer_params)
-
     if @manufacturer.save
       flash[:notice] = "Success"
       redirect_to manufacturers_path
