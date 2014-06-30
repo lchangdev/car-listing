@@ -44,3 +44,6 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'pry-rails'
 end
+
+gem 'simple_form'
+

@@ -13,6 +13,7 @@ class ManufacturersController < ApplicationController
     else
       flash[:notice] = "Error"
       render :new
+    end
   end
 
   private
