@@ -1,17 +1,19 @@
-<h1>list of manufacturers</h1>
-<table>
-  <thead>
-    <tr>
-      <th>name</th>
-      <th>country</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @manufacturers.each do |manufacturer| %>
+<div class="manufacturer-container">
+  <h1>List of Manufacturers</h1>
+  <table>
+    <thead>
       <tr>
-        <td><%= manufacturer.name %></td>
-        <td><%= manufacturer.country %></td>
+        <th>Name</th>
+        <th>Country</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @manufacturers.each do |manufacturer| %>
+        <tr>
+          <td><%= manufacturer.name %></td>
+          <td><%= manufacturer.country %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

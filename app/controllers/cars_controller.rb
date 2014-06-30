@@ -1,5 +1,9 @@
 class CarsController < ApplicationController
 
+  def index
+    @cars = Car.all
+  end
+
   def new
     @car = Car.new
   end
@@ -18,6 +22,6 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:manufacturer, :color, :year, :mileage, :description)
+    params.require(:car).permit(:manufacturer_id, :color, :year, :mileage, :description)
   end
 end

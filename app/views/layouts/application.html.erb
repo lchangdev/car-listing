@@ -8,6 +8,16 @@
 </head>
 <body>
 
+  <ul>
+    <li><%= link_to 'list of manufacturers', manufacturers_path %></li> |
+    <li><%= link_to 'register a new manufacturer', new_manufacturer_path %></li> |
+    <li><%= link_to 'list of cars', cars_path %></li> |
+    <li><%= link_to 'register a new car', new_car_path %></li>
+  </ul>
+
+  <% if flash.any? %>
+    <%= flash[:notice] %>
+  <% end %>
 <%= yield %>
 
 </body>

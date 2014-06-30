@@ -1,0 +1,23 @@
+body,
+.new-manufacturer-container,
+.manufacturer-container,
+.new-car-container,
+.car-container {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  margin: auto;
+}
