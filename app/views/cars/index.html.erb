@@ -1,0 +1,25 @@
+<div class="car-container">
+  <h1>List of Cars</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Manufacturer</th>
+        <th>Color</th>
+        <th>Year</th>
+        <th>Mileage</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @cars.each do |car| %>
+        <tr>
+          <td><%= car.manufacturer.name %></td>
+          <td><%= car.color %></td>
+          <td><%= car.year %></td>
+          <td><%= car.mileage %></td>
+          <td><%= car.description %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
